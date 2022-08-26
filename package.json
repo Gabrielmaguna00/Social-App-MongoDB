@@ -9,7 +9,7 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "name": "clase-1-8-22",

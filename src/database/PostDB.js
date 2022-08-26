@@ -54,6 +54,11 @@ const deletePost = async (postId) => {
   return post;
 };
 
+const deletePostsUser = async (userId) => {
+  const deletePost = await postModel.deleteMany({ userId: userId });
+  return deletePost;
+};
+
 const hidenPostUsers = async (postId) => {
   const posts = await postModel.updateMany(
     { userId: postId },
@@ -80,4 +85,5 @@ module.exports = {
   createNewPost,
   createNewDraft,
   updatePost,
+  deletePostsUser,
 };

@@ -51,7 +51,7 @@ const updateUser = async (id, name, age, country) => {
 };
 
 const deleteUser = async function borrarAlumno(id) {
-  const user = await usermModel.updateOne({ _id: id }, { visibility: false });
+  const user = await userModel.updateOne({ _id: id }, { visibility: false });
   return user;
 };
 

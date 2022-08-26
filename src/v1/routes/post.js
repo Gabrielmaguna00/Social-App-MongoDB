@@ -10,6 +10,7 @@ const {
   deletePost,
   hidenPostUsers,
   publishDraft,
+  deletePostsUser,
 } = require("../../controllers/postControllers");
 
 router
@@ -20,6 +21,7 @@ router
   .post("/draft", createNewDraft)
   .put("/update", updatePost)
   .delete("/delete/:postId", deletePost)
+  .delete("/delete/:userId", deletePostsUser)
   .put("/hiden/:postId", hidenPostUsers)
   .put("/draft/:postId", publishDraft);
 

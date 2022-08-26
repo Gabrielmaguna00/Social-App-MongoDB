@@ -35,6 +35,11 @@ const deletePost = (postId) => {
   return post;
 };
 
+const deletePostsUser = (userId) => {
+  const deletePost = DB.deletePostsUser(userId);
+  return deletePost;
+};
+
 const hidenPostUsers = (postId) => {
   const post = DB.hidenPostUsers(postId);
   return post;
@@ -55,4 +60,5 @@ module.exports = {
   deletePost,
   hidenPostUsers,
   publishDraft,
+  deletePostsUser,
 };

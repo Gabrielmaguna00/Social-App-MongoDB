@@ -1,6 +1,7 @@
 const express = require("express");
 //const router = express.Router()
 const services = require("../services/userService");
+const servicesPost= require("../services/postService")
 
 const getUsers = async (req, res) => {
   try {
@@ -94,7 +95,8 @@ const updateUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
-    const user = services.deleteUser(id);
+    const user =await services.deleteUser(id);
+    await servicesPost.deletePostsUser(id)
     res
       .status(200)
       .json({ status: "resource deleted successfully", data: user });

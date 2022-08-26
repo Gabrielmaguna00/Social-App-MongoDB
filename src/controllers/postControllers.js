@@ -98,6 +98,16 @@ const deletePost = async (req, res) => {
   }
 };
 
+const deletePostsUser = async (req, res) => {
+  try {
+    const { userId } = req.params;
+    const deletePosts = await services.deletePostsUser(userId)
+    res
+      .status(200)
+      .json({ status: "resource deleted successfully!", data: post });
+  } catch (error) {}
+};
+
 const hidenPostUsers = async (req, res) => {
   try {
     const { postId } = req.params;
@@ -134,4 +144,5 @@ module.exports = {
   createNewPost,
   createNewDraft,
   updatePost,
+  deletePostsUser,
 };

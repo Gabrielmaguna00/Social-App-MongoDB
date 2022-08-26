@@ -2,10 +2,11 @@
 
 Rutas:
  GETs:
-    Users:  https://social-app-zbsj.onrender.com/api/v1/user  ->Entrega todos los usuarios
-            https://social-app-zbsj.onrender.com/api/v1/user/:userId  ->Entrega un usuario por su ID
-            https://social-app-zbsj.onrender.com/api/v1/user/age/:min/:max  ->Entrega usuarios segun el filtro de edad (:min es la edad mayor o igual)
-            https://social-app-zbsj.onrender.com/api/v1/user/country/:country  ->Entrega usuarios segun su pais
+    Users:  <ul><li><p>https://social-app-zbsj.onrender.com/api/v1/user  ->Entrega todos los usuarios</p></li>
+            <li><p>https://social-app-zbsj.onrender.com/api/v1/user/:userId  ->Entrega un usuario por su ID</p></li>
+            <li><p>https://social-app-zbsj.onrender.com/api/v1/user/age/:min/:max  ->Entrega usuarios segun el filtro de edad (:min es la edad mayor o igual)</p></li>
+            <li><p>https://social-app-zbsj.onrender.com/api/v1/user/country/:country  ->Entrega usuarios segun su pais</p></li>
+            </ul>
            
    Post:    https://social-app-zbsj.onrender.com/api/v1/post  -> Entrega todos los posts
             https://social-app-zbsj.onrender.com/api/v1/post/:postId  ->Entrega un post por su id
